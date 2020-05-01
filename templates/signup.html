@@ -1,0 +1,77 @@
+{% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>SignUp Aatmaan</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
+		<link rel="stylesheet" href="{% static 'css/signup_style.css' %}">
+		<link rel="shortcut icon" href="{%static 'images/favicon/favicon.png' %}" type="image/png">
+
+	</head>
+
+	<body>
+		<!-- partial:index.partial.html -->
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">	
+				<form method = "POST">
+					<h1>Create Account</h1>
+					<div class="social-container">
+						<a href="{% provider_login_url "google" %}" class="social"><i class="fab fa-google-plus-g" style="font-size:14px;color:red"></i></a>
+						<a href="{% provider_login_url "linkedin" method = "oauth2" %}" class="social"><i class="fab fa-linkedin-in" style="font-size:14px;color:blue"></i></a>
+					</div>
+					<span>or use your email for registration</span>
+
+					{% csrf_token %}
+					<input type="text" name  = "first_name" placeholder = "Enter your first name & last name">
+					<input type="text" name  = "username" placeholder = "Enter your username ">
+					<input type="email" name  = "email" placeholder = "Enter your email ID">
+					<input type="password" name  = "password1" placeholder = "Password">
+					<input type="password" name  = "password2" placeholder = "Confirm password">
+
+				<button>Sign Up</button>
+				</form>
+				
+				<div><h3>{% for message in messages %}{{ message }}{% endfor %}</h3></div>
+			</div>
+			<div class="form-container sign-in-container">
+				<form action="#">
+					<h1>Sign in</h1>
+					<div class="social-container">
+						<a href="{% provider_login_url "google" %}" class="social"><i class="fab fa-google-plus-g" style="font-size:14px;color:red"></i></a>
+						<a href="{% provider_login_url "linkedin" method = "oauth2" %}" class="social"><i class="fab fa-linkedin-in" style="font-size:14px;color:blue"></i></a>
+					</div>
+					<span>or use your account</span>
+					<input type="email" name = "email" placeholder="Email" />
+					<input type="password" name = "password" placeholder="Password" />
+					<a href="#">Forgot your password?</a>
+					
+					<button><a href="/">Sign In</a></button>
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>Welcome Back!</h1>
+						<p>To keep connected with us please login with your personal info</p>
+						<button class="ghost" id="signIn">Sign In</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>Hello, Friend!</h1>
+						<p>Enter your personal details and start journey with us</p>
+						<button class="ghost" id="signUp">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- partial -->
+		<script src="{% static 'js/signup_script.js' %}"></script>
+
+	</body>
+
+</html>

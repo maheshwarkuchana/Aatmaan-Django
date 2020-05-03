@@ -32,6 +32,15 @@
         <!--====== Style CSS ======-->
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+        <!--For glyphicon-envelope -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <style media="screen">
+        /* For subscription popup zoomin and zoomout added by SK */
+        .modal.fade .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(.5);transform: translate(0,0)scale(.5);}
+        .modal.show .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(1);transform: translate(0,0)scale(1);}
+        .modal-img {background-color: red;}
+        /*  background-image: url('static/images/blogs/fogg-message-sent.png') */
+        </style>
     </head>
 
     <body>
@@ -276,10 +285,42 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-title text-center pb-10">
                             <h3 class="title">Featured Blogs</h3>
-                            <p class="text">Revolutionizing healthcare with deep learning. <a href="#">Subscribe</a> to our newsletters.</p>
+                            <p class="text">Revolutionizing healthcare with deep learning. <br>
+                              Subscribe to our newsletters.
+                              <a href="#" data-toggle="modal" data-target="#exampleModal2">
+                                <i class='far fa-envelope' style='font-size:23px'></i></a>
+                              </p>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="col-md-12">
+                          <div class="form-input mt-20" >
+                            <button type="button" class="close modal-img" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                            <img src="{% static 'images/blogs/pablo-sign-up.png' %}">
+
+                              Subscribe to updates and get notified in your inbox directly.<br><br>
+                              <div class="input-items default">
+                                    <input type="email" name="email" placeholder="email@domain.com" required><br>
+                                    <i class="lni lni-envelope"></i>
+                                </div>
+                            </div> <!-- form input -->
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        <span aria-hidden="true">
+                          Get Notified</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
                         <div class="portfolio-menu text-center mt-50">

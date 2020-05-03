@@ -8,7 +8,7 @@ from django.contrib.auth.models import User, auth
 # Create your views here.
 
 class HomeView(LoginRequiredMixin, TemplateView):
-    template_name = "index.html" 
+    template_name = "index.html"
 
 def index(request):
     return render(request, 'index.html')
@@ -20,7 +20,7 @@ def signup(request):
         email = request.POST['email']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-        
+
         if password1 == password2:
             if User.objects.filter(username=username).exists():
                 messages.info(request, "Username taken")

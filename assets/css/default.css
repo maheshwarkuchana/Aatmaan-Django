@@ -31,7 +31,7 @@
 
 #style-6::-webkit-scrollbar-thumb
 {
-	background-color: #F90;	
+	background-color: #F90;
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,
 											  transparent 25%,
@@ -41,6 +41,7 @@
 											  transparent 75%,
 											  transparent)
 }
+
 
 .mt-5 {
 	margin-top: 5px;

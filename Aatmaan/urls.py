@@ -22,7 +22,7 @@ urlpatterns = [
     path('', include('login_auth.urls')),
     path('admin/', admin.site.urls),
 
-    path('oauth/', include('social_django.urls', namespace='social')),  
+    path('oauth/', include('social_django.urls', namespace='social')),
     path('accounts/', include('allauth.urls')),
 ]
 

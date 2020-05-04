@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog - Aatmaan</title>
+
+        <!--====== Line Icons CSS ======-->
+        <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="{% static 'css/blog_css/all.css' %}">
+
+        <!-- --------- Owl-Carousel ------------------->
+        <link rel="stylesheet" href="{% static 'css/blog_css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/blog_css/owl.theme.default.min.css' %}">
+
+        <!-- ------------ AOS Library ------------------------- -->
+        <link rel="stylesheet" href="{% static 'css/blog_css/aos.css' %}">
+
+        <!-- Custom Style   -->
+        <link rel="stylesheet" href="{% static 'css/blog_css/Style.css' %}">
+
+
+    </head>
+
+    <body>
+
+        <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+        <nav class="nav">
+            <div class="nav-menu flex-row">
+                <div class="nav-brand">
+                    <a href="#" class="text-gray">Blogger</a>
+                </div>
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div>
+                    <ul class="nav-items">
+                        <li class="nav-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Category</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Archive</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social text-gray">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------------- Main Site Section ------------------------------>
+
+        <main>
+            <!-- ---------------------- Site Content -------------------------->
+
+            <section class="container">
+                <div class="site-content">
+                    <div class="posts">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{%static 'images/blog/Blog-post/malaria.png' %}" class="img"
+                                        alt="malaria">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h2>Malaria</h2>
+                                <p>Malaria is a parasite-stricken disease. The parasite is transmitted to humans through
+                                    infected mosquito bites. People with malaria generally feel very sick, with high
+                                    fever, and chills sweating. Around 210 million people become diagnosed with malaria
+                                    each year, and about 440,000 die from the disease. The majority of the people who
+                                    die from the disease are young African children.
+                                    <br><br>
+                                    While the disease is uncommon in temperate climates, malaria continues to be
+                                    widespread in tropical and subtropical countries. World health officials are seeking
+                                    to minimize malaria incidence by providing bed nets to help shield people from
+                                    mosquito bites when they're sleeping. Scientists worldwide are working to create a
+                                    malaria-preventing vaccine.
+                                    <br><br>
+                                    If you are traveling to places where malaria is common, take steps by wearing
+                                    protective clothing, using insect repellants and sleeping under treated mosquito
+                                    nets to prevent mosquito bites. You may also wish to take preventive medicine
+                                    before, during and after your trip, depending on the area you are visiting and your
+                                    individual risk factors for infection. There are now many malaria parasites that are
+                                    immune to the most common drugs used to treat the disease.
+                                    <br><br>
+                                    <img src="{%static 'images/blog/Blog-post/life_cycle_malaria.jpg' %}" class="img"
+                                        alt="malaria">
+                                </p>
+                                <h3>Symptoms</h3>
+                                <p>Infection with malaria is usually characterized by first sign/common symptoms of
+                                    malaria include:
+                                    <ul>
+                                        <li><i class="lni lni-angle-double-right"></i> Very high temperature(fever)</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Headache</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Vomiting</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Nausea</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Joint/muscle pain</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Fatigue</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Loss of Appetite</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Profuse Sweating </li>
+                                        <li><i class="lni lni-angle-double-right"></i> Chest or stomach pain </li>
+                                        <li><i class="lni lni-angle-double-right"></i> Coughing</li>
+                                        <li><i class="lni lni-angle-double-right"></i> Sore throat</li>
+                                    </ul>
+                                    Many people who meet malaria phases of "attacks" malaria. An attack usually begins
+                                    with shivering and freezing, accompanied by a high fever, accompanied by vomiting
+                                    and a return to normal temperature. Signs and symptoms of malaria usually begin
+                                    within a few weeks after an infected mosquito has bitten them. Some kinds of malaria
+                                    parasites, however, can lie dormant in your body for up to a year.
+                                </p>
+                                <h3>Causes</h3>
+                                <p>Malaria is caused by a microscopic kind of parasite. The parasite is most frequently
+                                    transmitted to humans by mosquito bites.
+                                    <br><br><strong>Transmission process of the mosquito</strong><br>
+                                    Uninfected mouse. A mosquito gets infected by feeding on an person who has malaria.
+                                    Parasite Transmission. For fact, if this mosquito bites you, it will spread malaria
+                                    parasites to you.
+                                    In the body. They migrate to your liver once the parasites reach your body — where
+                                    some forms can lie dormant for as long as one year.
+                                    Into a sea of blood. They leave the liver as the parasites grow, and kill the red
+                                    blood cells. That is when people experience signs usually of malaria.
+                                    On to the next one. If an uninfected mosquito bites you at this point in the process
+                                    it will become infected with your malaria parasites and can spread them to the other
+                                    people it bites
+
+                                    <br><br><strong>Other modes of transmission</strong><br>
+                                    Since malaria-causing parasites damage red blood cells, people may also catch
+                                    malaria from exposure to infected blood including:
+                                    <ul>
+                                        <li><i class="lni lni-angle-double-right"></i> from mother to unborn child </li>
+                                        <li><i class="lni lni-angle-double-right"></i> by sharing needles used to inject
+                                            drugs</li>
+                                            <li><i class="lni lni-angle-double-right"></i> Through blood transfusions</li>
+                                    </ul>
+                                </p>
+                                <p>
+<h3>Risk factors:</h3>
+                                </p>
+                                    
+Living in or visiting areas where the disease is endemic is the main risk factor for contracting malaria. Malaria parasites come in many different forms. Also commonly found in:
+	•  African countries south of the Sahara Desert 
+	• The Asian subcontinent of New Guinea,
+	•  the Dominican Republic and Haiti
+Risk of more-severe disease:
+People at elevated risk of serious illness include: 
+	• young children and infants 
+	• Older adults 
+	• Travelers from areas without malaria 
+	• Pregnant women and their unborn children 
+Deprivation, lack of awareness and little to no access to health care often lead to deaths from malaria around the world.
+Immunity can wane
+Residents of a malaria area may be exposed to the disease so much that they develop a partial immunity that can lessen the severity of the symptoms of malaria. However, if you move to a country where you are no longer frequently exposed to the parasite, the partial immunity can disappear.
+
+                                    </p>
+                                    <!-- <button class="btn post-btn">Read More &nbsp; <i
+                                        class="fas fa-arrow-right"></i></button> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <aside class="sidebar">
+                        <div class="category">
+                            <h2>Category</h2>
+                            <ul class="category-list">
+                                <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                    <a href="#">AI for Healthcare</a>
+                                    <span>(05)</span>
+                                </li>
+                                <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                    <a href="#">Blockchain</a>
+                                    <span>(02)</span>
+                                </li>
+                                <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                    <a href="#">Diseases</a>
+                                    <span>(07)</span>
+                                </li>
+                                <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                    <a href="#">Recent Developments</a>
+                                    <span>(01)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="popular-post">
+                            <h2>Popular Post</h2>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="{%static 'images/blog/popular-post/m-blog-1.jpg' %}" class="img"
+                                            alt="blog1">
+                                    </div>
+                                    <div class="post-info flex-row">
+                                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                                            2019</span>
+                                        <span>2 Comments</span>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">New data recording system to better analyse road accidents</a>
+                                </div>
+                            </div>
+
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="{%static 'images/blog/popular-post/m-blog-4.jpg' %}" class="img"
+                                            alt="blog1">
+                                    </div>
+                                    <div class="post-info flex-row">
+                                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                                            2019</span>
+                                        <span>2 Comments</span>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">New data recording system to better analyse road accidents</a>
+                                </div>
+                            </div>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="{%static 'images/blog/popular-post/m-blog-5.jpg' %}" class="img"
+                                            alt="blog1">
+                                    </div>
+                                    <div class="post-info flex-row">
+                                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                                            2019</span>
+                                        <span>2 Comments</span>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">New data recording system to better analyse road accidents</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                            <h2>Newsletter</h2>
+                            <div class="form-element">
+                                <input type="text" class="input-element" placeholder="Email">
+                                <button class="btn form-btn">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="popular-tags">
+                            <h2>Popular Tags</h2>
+                            <div class="tags flex-row">
+                                <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="300">travel</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="700">love</span>
+                                <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- -----------x---------- Site Content -------------x------------>
+
+        </main>
+
+        <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+        <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                    <h2>About us</h2>
+                    <p>Aatmaan's mission is to use AI to make healthcare more accessible and affordable.
+                        Our core team combines deep learning expertise with clinical, scientific and regulatory
+                        knowledge</p>
+                </div>
+                <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Newsletter</h2>
+                    <p>Stay update with our latest</p>
+                    <div class="form-element">
+                        <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Follow us</h2>
+                    <p>Let us be Social</p>
+                    <div>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="rights flex-row">
+                <h4 class="text-gray">
+                    Copyright ©2020 All rights reserved | Designed by
+                    <a href="index.html" target="_black">Aatmaan</a>
+                </h4>
+            </div>
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+
+        <!-- -------------x------------- Footer --------------------x------------------- -->
+
+        <!-- Jquery Library file -->
+        <script src="{%static 'js/blog_js/Jquery3.4.1.min.js' %}"></script>
+
+        <!-- --------- Owl-Carousel js ------------------->
+        <script src="{%static 'js/blog_js/owl.carousel.min.js' %}"></script>
+
+        <!-- ------------ AOS js Library  ------------------------- -->
+        <script src="{%static 'js/blog_js/aos.js' %}"></script>
+
+        <!-- Custom Javascript file -->
+        <script src="{%static 'js/blog_js/main.js' %}"></script>
+    </body>
+
+</html>
